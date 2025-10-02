@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/dots-pattern.css";
 import "../styles/gradients.css";
+import { downloadAsEML, downloadAsHTML, copyToClipboard } from "../utils/emailExport";
 
 // Image imports
 const imgFrame8 =
@@ -17,12 +18,44 @@ const imgAimyLogo =
   "https://s3-alpha-sig.figma.com/img/7bed/2726/d3e8e927320bffd6c2afcb1042dfe499?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Wb861ZD0fGM3M5ogSJYamKyZbmMqFQVENfkcoCgjYexR3l~pmuWoxoKxaFb8lRxkLotA4HoEJVAsVB8Ux8CZFu9mqfAME6rYaPa7nx7yPuqPO28Nbx~AnjA-Hhg8fCvDp~fV1puoTG65QIEHZQ4f0Zaorp2pWJaYCbr-QlOtafu2r3fJcjxde49xnw4~AgRF1UWaoZMjs5TpV~cO~kjwJvpUPqfl1wUGga15CtOXdndAZ-Xe76OmlK30dT5oRRRdgSi~NM66jHIbtVgNvZfQIGVf~ShK8lXyFgxF~hqtiLr-7orHCvrKzqp--eHk3ihjIbJTsc-zNYR1I6PL6meKNQ__";
 
 export default function AiMYsNewsletter() {
+  const [copySuccess, setCopySuccess] = useState(false);
+
+  const handleCopyToClipboard = async () => {
+    const success = await copyToClipboard();
+    if (success) {
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    }
+  };
+
   return (
     <div
       className="bg-gradient-aimy-vertical relative min-h-screen w-[600px] mx-auto"
       data-name="AiMY's Newsletter"
     >
       <div className="dots-pattern absolute inset-0 pointer-events-none"></div>
+
+      {/* Export Buttons */}
+      <div className="fixed top-4 right-4 z-50 flex flex-col gap-2">
+        <button
+          onClick={downloadAsEML}
+          className="px-4 py-2 bg-gradient-aimy text-white rounded-lg shadow-aimy hover:shadow-xl transition-all text-sm font-urbanist font-medium"
+        >
+          📧 Download as Email (.eml)
+        </button>
+        <button
+          onClick={downloadAsHTML}
+          className="px-4 py-2 bg-gradient-aimy text-white rounded-lg shadow-aimy hover:shadow-xl transition-all text-sm font-urbanist font-medium"
+        >
+          💾 Download as HTML
+        </button>
+        <button
+          onClick={handleCopyToClipboard}
+          className="px-4 py-2 bg-gradient-aimy text-white rounded-lg shadow-aimy hover:shadow-xl transition-all text-sm font-urbanist font-medium"
+        >
+          {copySuccess ? '✅ Copied!' : '📋 Copy HTML'}
+        </button>
+      </div>
 
       {/* Header Section */}
       <header className="px-3 py-1.5 w-full">
