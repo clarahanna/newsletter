@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AiMY Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+        background: linear-gradient(180deg, rgba(183, 153, 255, 0.05) 0%, rgba(111, 223, 226, 0.05) 100%);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #6FDFE2 0%, #B799FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .card-gradient {
+        background: linear-gradient(135deg, #6FDFE2, #425AEF, #834DDE);
+      }
+      .card-dots {
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+        background-size: 16px 16px;
+        opacity: 0.2;
+      }
+      .glass-effect {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .dots-pattern {
+        background-image: radial-gradient(rgba(111, 223, 226, 0.1) 2px, transparent 2px);
+        background-size: 24px 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="min-height: 100vh; width: 600px; margin: 0 auto; position: relative;">
+      <div class="dots-pattern" style="position: absolute; inset: 0; pointer-events: none;"></div>
+      
+      <!-- Header Section -->
+      <header style="padding: 12px 24px; width: 100%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: black;">
+          <span>Date: 00/00/0000</span>
+          <span>Version: V-00000</span>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section style="padding: 48px 32px 32px; position: relative;">
+        <div class="hero-container" style="position: relative; max-width: 1200px; margin: 0 auto;">
+          <div style="display: flex; gap: 40px; align-items: start;">
+            <!-- Team Image (Left) -->
+            <div style="position: relative; width: 280px; height: 200px;">
+              <div class="glass-effect" style="position: absolute; inset: 0; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 32px rgba(111, 223, 226, 0.1);">
+                <img 
+                  src="https://s3-alpha-sig.figma.com/img/8775/c0fb/f65c13f12849948c17965fa647c16919?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=baNCvxbjKRXNMQ3mh9sxBSL~RyslzdPNiEHKuX-w9DV0u3wE0CgLQiuR4RqY5PWlN7si8N3Ef5rBcKTEXlqeUua-bTW-cJ86ypeSLgVU1~9WjujrlXFTjjxHfx2b1NdiyTsfjQjzLwZF7593AeUYlyV0~mNXrM2qt~8qEDmLSY3xW6by5OVbtV4O69lNZk0gbNbofcWg8b3Zpr2wrZVFsWpX-LDYuxkXW4kSKnFidBTkE2z8Dz5epcpK95r-9a-Tw4fAHpxIZdVRL-h76v6sh-MtOfYDaWU2BtGe0vcaCxdODOh1peb~Uhpvh7m668sjdDbJEStfUHxIs0BD-w3QwQ__"
+                  alt="Team AiMY"
+                  style="width: 100%; height: 100%; object-fit: cover;"
+                />
+                <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(111, 223, 226, 0.1) 0%, rgba(183, 153, 255, 0.1) 100%);"></div>
+              </div>
+            </div>
+
+            <!-- Right Content -->
+            <div style="flex: 1; position: relative;">
+              <!-- Title -->
+              <h1 style="font-family: Urbanist; font-weight: 200; font-size: 28px; color: #474747; line-height: 1.2; margin-bottom: 16px;">
+                Team AiMY; what we're building.
+              </h1>
+
+              <!-- Meet Box (below content) -->
+              <div style="position: relative; margin-top: 40px; margin-left: auto; width: 220px;">
+                <div class="glass-effect" style="border-radius: 12px; padding: 12px; position: relative; z-index: 2; border: 1px solid rgba(183, 153, 255, 0.2); background: linear-gradient(135deg, rgba(111, 223, 226, 0.35) 0%, rgba(66, 90, 239, 0.35) 50%, rgba(131, 77, 222, 0.35) 100%);">
+                  <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                    <!-- Meet Text -->
+                    <h2 style="font-family: Urbanist; margin: 0; text-align: center;">
+                      <span style="color: #6366F1; font-size: 16px; font-weight: 500;">Meet</span>
+                    </h2>
+                    <!-- Logo -->
+                    <img 
+                      src="https://s3-alpha-sig.figma.com/img/e7a0/7227/4a7905a812ea7f2bc91fcb98a9ea3155?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NvoUc4-K-0SPkbb03MXV-rQIYQ-k21hiFUW6ScwliQ1wLcQ8TdsDkTE7ioNwymVkDISRSAS17TUiUm0hWJO7hag3lJEwPxX7csCPmolvQu~jsxQn9tHVG8FnHAVvqb5xmPurj88xB3rBLCNrTWxZbf5d8~uDY5IfffHJshXAyvBBi~1N0Krl0LOpinfzvx9kF9kIScyHqsbYjIOGUnNsP5HUOb8E28bDL7NtjejbIPyPmcP82nYUHwKsSsMFEx0vAV8hyYiiQbez652ciEKzkdztKTF66tdGoNxzt8c-udd0foILhaokJrcgDBDcPkSK0ovOTVVMRU-uc~xbGhFHTg__"
+                      alt="AiMY Logo"
+                      style="width: 60px; height: 60px; object-fit: contain;"
+                    />
+                  </div>
+                </div>
+                <div style="position: absolute; inset: 0; transform: translate(8px, 8px); border-radius: 20px; background: linear-gradient(135deg, rgba(111, 223, 226, 0.2) 0%, rgba(183, 153, 255, 0.2) 100%); z-index: 1;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI Agents Introduction -->
+      <section style="padding: 32px; position: relative; margin-top: 48px;">
+        <div style="position: relative; max-width: 1200px; margin: 0 auto;">
+          <!-- First Box: Robot and Headings -->
+          <div style="position: relative; width: 100%;">
+            <div class="glass-effect" style="border-radius: 20px; padding: 32px; position: relative; border: 2px solid transparent; background-clip: padding-box;">
+              <div style="display: flex; align-items: center; gap: 32px;">
+                <!-- Robot Image -->
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/e052/84f2/ebaf90fadae81c48dc83cb846fb1dccf?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=WnF5Z1W5mSG7yLfzn7PKAWbcOBb3MwSiURXlys3DvWAP5BtdHE1fLLkRlHu8dr3zinAxbMvXehNzNf9SI-73EzcVcBdKmVlqf2jiHZFDknBkXyjz0rnHsOSZ9rmuUQUQd1uijK1PFT-mHzpgGLD2a4eMOt7EFBIAfBLxU-GBA51Zhxe4aKpCVd6U~E3kwv76l1-fnS3vjqTCVP-p8uabJa6i0~aT1bycBIQ~AZaamVVtyywO3MVa1gVKOQHbf5dLvdRQZ4Ju66gPD~yupfIwpZMMYC7BertPZrUQKjkJO~DiJA3WegV0jqMt-i1tD56vSiKEjZwL~oHj9YjDvvUtjQ__"
+                  alt="AI Assistant"
+                  style="width: 160px; height: 160px; object-fit: contain;"
+                />
+                <!-- Headings -->
+                <div>
+                  <h2 style="margin: 0;">
+                    <div style="font-family: Urbanist; font-size: 20px; font-weight: 600; margin-bottom: 8px;">
+                      <span class="gradient-text">Smarter Teams Start Here</span>
+                    </div>
+                    <div style="font-family: Urbanist; font-size: 20px; font-weight: 600; color: #6366F1;">
+                      Meet AiMY's AI Agents
+                    </div>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div style="position: absolute; inset: 0; border-radius: 20px; border: 2px solid transparent; background: linear-gradient(135deg, #6FDFE2, #425AEF, #834DDE) border-box; -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); -webkit-mask-composite: destination-out; mask-composite: exclude;"></div>
+          </div>
+
+          <!-- Second Box: Description -->
+          <div style="position: relative; width: 70%; margin: -20px auto 0; left: 0; right: 0;">
+            <div class="glass-effect" style="border-radius: 20px; padding: 24px; position: relative; border: 2px solid transparent; background-clip: padding-box;">
+              <p style="font-family: Urbanist; font-size: 16px; color: rgba(0, 0, 0, 0.8); line-height: 1.6; margin: 0;">
+                AiMY agents aren't here to replace you — they're here to lift you up. They take care of routine tasks, surface insights, and free you to focus on the work that really makes a difference.
+              </p>
+            </div>
+            <div style="position: absolute; inset: 0; border-radius: 20px; border: 2px solid transparent; background: linear-gradient(135deg, #6FDFE2, #425AEF, #834DDE) border-box; -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); -webkit-mask-composite: destination-out; mask-composite: exclude;"></div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI Agents Cards -->
+      <section style="padding: 0 32px;">
+        <!-- AiMY QA -->
+        <div style="margin-bottom: 32px; background: #F8F9FE; border-radius: 16px; overflow: hidden; width: 500px; margin-left: auto; margin-right: auto;">
+          <!-- Header with Image -->
+          <div style="display: flex; align-items: flex-start;">
+            <!-- Left Image -->
+            <div style="width: 160px; height: 160px; flex-shrink: 0;">
+              <img src="https://s3-alpha-sig.figma.com/img/4e9f/9422/a183ed3d1ebc7e6ddb14795ac8ac17ba?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PorJixHOCfTZ9m6z7ryEVQbE4WoSl5RI4izkNXE69VqrcjAtA4h4fcosZhw62-MxD6OnY3AidpE4ftI~KihPvfbY-LyMnmihS9j7YfIhHSLGP1pB6SXkaLdAqW9zv-f~manu8CcFo2mUCvcHerHPFj7Ga8hI8BUq7C5x5R7oTMRvCwljIOzP96VZomZ50f9LdPkRN32dpBMt6Of-nm2-XrI2BZ~uX5eQ0G80IW9jkCHuQy2nmKrCnhueTwsH154GCMoxBlG~YVtTzafvHiKMfDf0eJzT-C4A8AJ~rXWoJsJXqrVFWKc0BnnMZrXtDUDepeG0x9dILwZQ9hfb-h3F8g__" 
+                 alt="AiMY QA" 
+                 style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <!-- Right Content -->
+            <div style="padding: 24px;">
+              <h3 style="font-family: Urbanist; font-weight: 800; font-size: 24px; margin: 0; color: #6366F1;">AiMY QA</h3>
+              <p style="font-family: Urbanist; font-size: 16px; color: rgba(0, 0, 0, 0.7); margin: 8px 0 0; max-width: 280px;">
+                Your performance coach in the background, analyzing interactions and turning them into insights.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GIF Container -->
+        <div style="margin-bottom: 32px; width: 500px; background: #F8F9FE; border-radius: 16px; overflow: hidden; margin-left: auto; margin-right: auto;">
+          <div style="width: 100%; aspect-ratio: 16/9;">
+            <!-- Replace src with your GIF URL -->
+            <img src="your-gif-url-here.gif" alt="AiMY QA Demo" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+        </div>
+
+        <!-- Features Section -->
+        <div style="margin-bottom: 32px; font-family: Urbanist; width: 500px; margin-left: auto; margin-right: auto;">
+          <h4 style="font-size: 24px; margin: 0 0 24px; color: #474747;">Introducing AiMY QA</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="width: 24px; height: 24px; border-radius: 50%; background: #E8EAFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <svg style="width: 14px; height: 14px; color: #6366F1;" viewBox="0 0 12 12" fill="none">
+                  <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span style="font-size: 16px; color: rgba(0, 0, 0, 0.8); line-height: 1.5;">
+                Understands every call and ticket – reviews 100% of interactions so nothing gets missed.
+              </span>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="width: 24px; height: 24px; border-radius: 50%; background: #E8EAFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <svg style="width: 14px; height: 14px; color: #6366F1;" viewBox="0 0 12 12" fill="none">
+                  <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span style="font-size: 16px; color: rgba(0, 0, 0, 0.8); line-height: 1.5;">
+                Learns your KPIs – adapts to what matters most to your team, whether that's speed, quality, or comp.
+              </span>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="width: 24px; height: 24px; border-radius: 50%; background: #E8EAFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <svg style="width: 14px; height: 14px; color: #6366F1;" viewBox="0 0 12 12" fill="none">
+                  <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span style="font-size: 16px; color: rgba(0, 0, 0, 0.8); line-height: 1.5;">
+                Real-time alerts – spots performance issues as they happen.
+              </span>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="width: 24px; height: 24px; border-radius: 50%; background: #E8EAFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <svg style="width: 14px; height: 14px; color: #6366F1;" viewBox="0 0 12 12" fill="none">
+                  <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span style="font-size: 16px; color: rgba(0, 0, 0, 0.8); line-height: 1.5;">
+                Insight-led graphs on demand – just type a question into the chat and AiMY QA generates the visuals for you.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AiMY Recruitment -->
+        <div style="width: 500px; margin-left: auto; margin-right: auto; position: relative; background: white;">
+          <div style="display: flex; align-items: center; padding: 24px; position: relative;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #6FDFE2, #425AEF, #834DDE); opacity: 0.1;"></div>
+            <!-- Dot patterns -->
+            <div style="position: absolute; top: 0; left: 0; width: 120px; height: 120px; background-image: radial-gradient(circle, rgba(111, 223, 226, 0.2) 2px, transparent 2px); background-size: 16px 16px;"></div>
+            <div style="position: absolute; bottom: 0; right: 0; width: 120px; height: 120px; background-image: radial-gradient(circle, rgba(131, 77, 222, 0.2) 2px, transparent 2px); background-size: 16px 16px;"></div>
+            <!-- Content with gradient behind -->
+            <div style="flex: 1; padding-right: 24px;">
+              <h3 style="font-family: Urbanist; font-weight: 800; font-size: 24px; margin: 0; color: #6366F1;">AiMY Recruitment</h3>
+              <p style="font-family: Urbanist; font-size: 16px; color: rgba(0, 0, 0, 0.7); margin: 8px 0 0;">
+                The recruiter's best buddy, matching open roles with great talent in record time.
+              </p>
+            </div>
+            <div style="width: 160px; height: 160px; flex-shrink: 0;">
+              <img src="https://s3-alpha-sig.figma.com/img/2c61/2c9f/0ae39f5d6e9909bcbec1844dde5763ed?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=N3-z8yvK1PVXilB5xzIwIE3IiBmhUT6JooBy0zcre0cCSMpBT8ZqH-6SesyYd1EO4ARAK7Zezq4-UdT69pm~yfOW6lIcFmxKIq70J-fJbUpPTKcumDkDOz29BdKUbe14mM4f1BvCqmgH4xrRK3pxXEJ5gFazzSS6WC957RD9ZC780jiNvzRV5RpTicRoMaksFwKICwNuOO9OlRq7gvUOX-BDDHR5S~0FGvVDVDWDiv1aqZz~xm~B7tJMjOcE9jUhVOucLVOqBIVqn~-QnsG6kDh60nYqKBZQUxf8jgcsrMubTs5BW3MQz19dm1UxpTWWPzD8FDWkoEyVga6HH0gTAQ__" 
+                 alt="AiMY Recruitment" 
+                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+
+        <!-- AiMY Knowledge -->
+        <div style="width: 500px; margin-left: auto; margin-right: auto; position: relative; background: white;">
+          <div style="display: flex; align-items: center; padding: 24px; position: relative;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #6FDFE2, #425AEF, #834DDE); opacity: 0.1;"></div>
+            <!-- Dot patterns -->
+            <div style="position: absolute; top: 0; left: 0; width: 120px; height: 120px; background-image: radial-gradient(circle, rgba(111, 223, 226, 0.2) 2px, transparent 2px); background-size: 16px 16px;"></div>
+            <div style="position: absolute; bottom: 0; right: 0; width: 120px; height: 120px; background-image: radial-gradient(circle, rgba(131, 77, 222, 0.2) 2px, transparent 2px); background-size: 16px 16px;"></div>
+            <!-- Content with gradient behind -->
+            <div style="width: 160px; height: 160px; flex-shrink: 0; margin-right: 24px;">
+              <img src="https://s3-alpha-sig.figma.com/img/2c61/2c9f/0ae39f5d6e9909bcbec1844dde5763ed?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=N3-z8yvK1PVXilB5xzIwIE3IiBmhUT6JooBy0zcre0cCSMpBT8ZqH-6SesyYd1EO4ARAK7Zezq4-UdT69pm~yfOW6lIcFmxKIq70J-fJbUpPTKcumDkDOz29BdKUbe14mM4f1BvCqmgH4xrRK3pxXEJ5gFazzSS6WC957RD9ZC780jiNvzRV5RpTicRoMaksFwKICwNuOO9OlRq7gvUOX-BDDHR5S~0FGvVDVDWDiv1aqZz~xm~B7tJMjOcE9jUhVOucLVOqBIVqn~-QnsG6kDh60nYqKBZQUxf8jgcsrMubTs5BW3MQz19dm1UxpTWWPzD8FDWkoEyVga6HH0gTAQ__" 
+                 alt="AiMY Knowledge Brain Icon" 
+                 style="width: 100%; height: 100%; object-fit: contain;" />
+            </div>
+            <div style="flex: 1;">
+              <h3 style="font-family: Urbanist; font-weight: 800; font-size: 24px; margin: 0; color: #6366F1;">AiMY Knowledge</h3>
+              <p style="font-family: Urbanist; font-size: 16px; color: rgba(0, 0, 0, 0.7); margin: 8px 0 0;">
+                Your team's brainy sidekick, ready with instant answers and insights whenever you need them.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AiMY Sales -->
+        <div style="width: 500px; margin-left: auto; margin-right: auto; position: relative; background: white;">
+          <div style="display: flex; align-items: center; padding: 24px; position: relative;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #6FDFE2, #425AEF, #834DDE); opacity: 0.1;"></div>
+            <!-- Dot patterns -->
+            <div style="position: absolute; top: 0; left: 0; width: 120px; height: 120px; background-image: radial-gradient(circle, rgba(111, 223, 226, 0.2) 2px, transparent 2px); background-size: 16px 16px;"></div>
+            <div style="position: absolute; bottom: 0; right: 0; width: 120px; height: 120px; background-image: radial-gradient(circle, rgba(131, 77, 222, 0.2) 2px, transparent 2px); background-size: 16px 16px;"></div>
+            <!-- Content with gradient behind -->
+            <div style="flex: 1; padding-right: 24px;">
+              <h3 style="font-family: Urbanist; font-weight: 800; font-size: 24px; margin: 0; color: #6366F1;">AiMY Sales</h3>
+              <p style="font-family: Urbanist; font-size: 16px; color: rgba(0, 0, 0, 0.7); margin: 8px 0 0;">
+                Your digital deal-hunter, finding the right people and starting the right conversations.
+              </p>
+            </div>
+            <div style="width: 160px; height: 160px; flex-shrink: 0;">
+              <img src="https://s3-alpha-sig.figma.com/img/11/190/7a7d5ccd440dbe8b52514750c8046a2e?Expires=1698624000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XFMkP5kTdKvrZBqkYwxmUJDf2aqjZC~YP~YWoKVW9LO2yqp7u1mxgBSsPK0UE6Z-eY7tJuikjvZDn5FNVlaBpxc0k-xtNGtOytFwlrC9uWDx1BFs2xw4CXIl29UE8WBkSuAp2kR0A33zQUxstX1l4J2xMNQb70QzTUsOOJ5EOGfBI7bJl5~3JhFXnakAawiLcTE58O3eAfiMSjRIsQbmqo7bJfOGKMQf7C2O1wEgN2BNi90skxVaHy~FT0DITaABbVZXuKfT2Vp9FmoUxTQe1Ig1tvcTL9s52PeG2ZUKKWb7LMIIvlmUWFcPV01GKpL8~uCFvxPysqlQWXKC~4pBnA__" 
+                 alt="AiMY Sales Analytics" 
+                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer style="margin-top: 48px; width: 100%;">
+        <div style="width: 500px; margin: 0 auto; background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)); backdrop-filter: blur(10px); border-radius: 16px; padding: 24px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h4 style="font-family: Urbanist; font-weight: 600; color: #474747; margin: 0; font-size: 16px;">Contact Us</h4>
+              <p style="color: rgba(0, 0, 0, 0.7); margin: 8px 0; font-size: 14px;">Egypt: +202-2527-3003</p>
+              <a href="mailto:info@flairstech.com" style="color: #6366F1; text-decoration: none; font-size: 14px;">
+                info@flairstech.com
+              </a>
+            </div>
+            <img 
+              src="https://s3-alpha-sig.figma.com/img/7bed/2726/d3e8e927320bffd6c2afcb1042dfe499?Expires=1760313600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Wb861ZD0fGM3M5ogSJYamKyZbmMqFQVENfkcoCgjYexR3l~pmuWoxoKxaFb8lRxkLotA4HoEJVAsVB8Ux8CZFu9mqfAME6rYaPa7nx7yPuqPO28Nbx~AnjA-Hhg8fCvDp~fV1puoTG65QIEHZQ4f0Zaorp2pWJaYCbr-QlOtafu2r3fJcjxde49xnw4~AgRF1UWaoZMjs5TpV~cO~kjwJvpUPqfl1wUGga15CtOXdndAZ-Xe76OmlK30dT5oRRRdgSi~NM66jHIbtVgNvZfQIGVf~ShK8lXyFgxF~hqtiLr-7orHCvrKzqp--eHk3ihjIbJTsc-zNYR1I6PL6meKNQ__"
+              alt="AiMY Logo"
+              style="height: 32px;"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

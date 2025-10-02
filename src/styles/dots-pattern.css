@@ -1,0 +1,6 @@
+.dots-pattern {
+  background-image: radial-gradient(circle, #b799ff 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+  opacity: 0.1;
+}
